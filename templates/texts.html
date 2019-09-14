@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Automatic text Summerizer</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/materialize.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{url_for('static',filename='css/style.css')}}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="blue darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CodeCrazy</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container"style="">
+      <br><br>
+      <h1 class="header center orange-text">Automatic Text Summarizer</h1>
+      <div class="row center" >
+        <h5 class="header col s12 light">A modern responsive front-end for ATS</h5>
+      </div>
+      <div class="row center" style="border: 2px solid blue;box-shadow: 2px 2px 10px grey">
+         <div class="center" id="query" style="margin:100px;">
+
+
+        <form action=/about method="POST" enctype="multipart/form-data">
+          
+          <div class="input-field">
+            <textarea placeholder="Type you queries" name="message" class="materialize-textarea">
+              
+            </textarea>
+            <label for="message">Type Here</label>
+        </div>
+        
+        <input type="submit"   value="Summerize now" style="color: white;background: #0d47a1;width:100%;height:55px;border:none;border-radius:4px">
+        </form>
+
+     </div>
+
+        </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+
+  <footer class="page-footer blue darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">codeCrazy</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{url_for('static',filename='js/materialize.js')}}"></script>
+  <script src="{{url_for('static',filename='js/init.js')}}"></script>
+
+  </body>
+</html>
